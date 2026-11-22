@@ -47,7 +47,7 @@ def _budget_wait(est):
 
 def llm(system, user, retries=5, max_out=None):
     if STOP.is_set(): raise Stopped()
-    if not config.LLM_API_KEY: return mock(user)
+    if not config.LLM_API_KEY: raise RuntimeError("LLM_API_KEY is not set - refusing to produce a summary without a real LLM")
     max_out = max_out or config.LLM_MAX_OUT
     body = {"model": config.LLM_MODEL, "temperature": 0.1, "max_tokens": max_out,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
@@ -107,9 +107,6 @@ def parse_json(s):
         try: return repair_json(s[s.find("{"):])
         except ValueError: raise ValueError("no valid JSON in LLM output")
 
-def mock(user):
-    return {**{k: ([] if isinstance(v, list) else v) for k, v in SCHEMA.items()}, "tldr": ["[MOCK] Set LLM_API_KEY for real summaries."], "tone": {"label": "n/a", "reason": "mock"}}
-
 def _map_chunk(c, i, n):
     return llm(f"You extract facts from part {i+1}/{n} of an Indian earnings-call transcript. {RULES}",
         f"Return JSON with keys {json.dumps(SCHEMA)}. For key_metrics give: entity (Consolidated / JLR / India PV / a segment...), period (e.g. Q2 FY27, H1 FY27, FY28 target) and a verbatim 'quote' (max 25 words) that CONTAINS the number. Never label a segment's number as consolidated. For guidance, start each item with entity and period. For notable_qa use the analyst or questioner's name and firm for asked_by. Use the named management executive or speaker who gives the answer for answered_by; if no person is named, use 'Management'. Keep asked_by and answered_by names. Empty lists if nothing relevant.\n\nTEXT:\n{c}")
@@ -163,7 +160,7 @@ def summarize(text, meta):
     if not chunks: raise ValueError("empty transcript")
     emit("chunks_ready", total=len(chunks))
     parts = [map_chunk(c, i, len(chunks)) for i, c in enumerate(chunks)]
-    final = reduce_parts(parts) if config.LLM_API_KEY else parts[0]
+    final = reduce_parts(parts)
     final = {k: final.get(k, v) for k, v in SCHEMA.items()}
     final = verify_metrics(final, text)
     return {"company": meta["company"], "scrip_code": meta.get("scrip"), "nse_symbol": meta.get("symbol"), "quarter": meta.get("quarter"),

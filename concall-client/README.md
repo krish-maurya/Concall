@@ -31,6 +31,7 @@ If the backend is on a different origin in production, set `VITE_API_BASE=https:
 | `POST /api/backfill?days=N` | "Fetch older calls" drawer |
 | `GET /api/progress` | Activity list in the same drawer (polled every 3 s while open) |
 | `WS /ws` | New summaries appear at the top with a "New" tag; auto-reconnects |
+| `WS /ws`, `WS /ws/live` (shown in the **WebSocket** button) | URLs for other apps, a connection test, a "Fetch one" example message and copy-paste JS/Python snippets |
 
 ## Structure
 

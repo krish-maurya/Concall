@@ -71,3 +71,17 @@ export function wsUrl(): string {
   const proto = window.location.protocol === "https:" ? "wss" : "ws";
   return `${proto}://${window.location.host}/ws`;
 }
+
+/**
+ * WebSocket URLs for OTHER applications to subscribe to. Unlike wsUrl() (which may be the dev-server
+ * proxy), this points at the backend itself: VITE_API_BASE, else VITE_API_TARGET, else this page's origin.
+ */
+export function backendWsUrls(): { summaries: string; live: string } {
+  const target = (
+    import.meta.env.VITE_API_BASE ||
+    import.meta.env.VITE_API_TARGET ||
+    "http://localhost:8000"
+  ) as string;
+  const base = target.replace(/\/$/, "").replace(/^http/, "ws");
+  return { summaries: `${base}/ws`, live: `${base}/ws/live` };
+}

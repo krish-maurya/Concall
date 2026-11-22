@@ -1,7 +1,9 @@
-"""Offline tests (no network, no API key): python -m pytest -q"""
-import os, sys, json, pymupdf
+"""Offline tests (no network, no API key): python -m pytest -q
+The only fake is the LLM network call (see fake_llm); production code has no mock mode."""
+import os, sys, json, pymupdf, pytest
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 os.environ["DB_PATH"] = "/tmp/test_concall.db"; os.environ["LLM_API_KEY"] = ""
+os.environ["WATCH_MODE"] = "all"
 if os.path.exists("/tmp/test_concall.db"): os.remove("/tmp/test_concall.db")
 import db, pipeline
 from fastapi.testclient import TestClient
@@ -9,6 +11,16 @@ from server.app import app
 from extract.extract import detect_quarter
 from summarize.summarize import chunk, verify_metrics
 from watcher.sources import is_transcript
+from summarize import summarize as S
+REAL_LLM = S.llm
+
+@pytest.fixture(autouse=True)
+def fake_llm(monkeypatch):
+    """Test double for the HTTP call to the LLM provider only."""
+    def fake(system, user, retries=5, max_out=None):
+        return {"tldr": ["t"], "management_commentary": ["m"], "guidance": [], "segment_performance": [], "key_metrics": [],
+                "notable_qa": [], "risks": [], "tone": {"label": "neutral", "reason": "test"}}
+    monkeypatch.setattr(S, "llm", fake)
 
 def make_pdf():
     d = pymupdf.open()
@@ -29,7 +41,7 @@ def test_quarter_chunk_verify():
     assert detect_quarter("the Q1 FY26 call") == "Q1 FY26"
     assert len(chunk(("x" * 500 + "\n\n") * 100)) > 3
     s = verify_metrics({"key_metrics": [{"value": "Rs 4,500 crore"}, {"value": "99%"}]}, "revenue 4,500 crore")
-    assert [m["verified"] for m in s["key_metrics"]] == [True, False]
+    assert [m["verified"] for m in s["key_metrics"]] == ["number_only", "no"]  # no quote given => never "full"
 def test_pipeline_dedupe_api_ws():
     db.init(); pdf = make_pdf()
     s = pipeline.process_sync(ITEM, pdf)
@@ -38,7 +50,7 @@ def test_pipeline_dedupe_api_ws():
     app.state.no_watcher = True
     with TestClient(app) as c:
         assert c.get("/api/summaries").json()[0]["company"] == "ACME Ltd"
-        assert c.get(f"/api/summaries/{s['id']}").json()["json"]["company"] == "ACME Ltd"
+        assert c.get(f"/api/summaries/{s['id']}").json()["company"] == "ACME Ltd"
         assert "TL;DR" in c.get(f"/api/summaries/{s['id']}/md").text
         assert c.get("/").status_code == 200
         with c.websocket_connect("/ws") as ws:
@@ -56,3 +68,18 @@ def test_events_emitted():
     S.set_context(company="X"); S.emit("chunk_done", index=1, total=2, reply={"a": 1})
     S.listeners.remove(got.append) if False else None
     assert got and got[0]["company"] == "X" and got[0]["reply"] == {"a": 1}
+
+def test_no_mock_without_key(monkeypatch):
+    import config
+    monkeypatch.setattr(config, "LLM_API_KEY", "")
+    with pytest.raises(RuntimeError, match="LLM_API_KEY"): REAL_LLM("s", "u")
+def test_watch_modes(monkeypatch):
+    import config
+    from watcher.watcher import wanted
+    it = {"company": "Tata Motors Ltd", "symbol": "TATAMOTORS"}
+    monkeypatch.setattr(config, "WATCH_MODE", "all"); assert wanted({"company": "Anyone Ltd"})
+    monkeypatch.setattr(config, "WATCH_MODE", "watchlist"); monkeypatch.setattr(config, "WATCHLIST", ["tata motors"]); monkeypatch.setattr(config, "SYMBOLS", [])
+    assert wanted(it) and not wanted({"company": "Anyone Ltd", "symbol": "ANY"})
+    monkeypatch.setattr(config, "WATCHLIST", []); monkeypatch.setattr(config, "SYMBOLS", ["TATAMOTORS"]); assert wanted(it)
+def test_daily_count():
+    db.init(); assert db.count_today() >= 0

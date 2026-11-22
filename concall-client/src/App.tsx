@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { ProgressPanel } from "./components/ProgressPanel";
 import { SummaryDetail } from "./components/SummaryDetail";
 import { SummaryList } from "./components/SummaryList";
+import { WebSocketPanel } from "./components/WebSocketPanel";
 import { useSummaries, useSummary } from "./hooks/useSummaries";
 
 function readHash(): number | null {
@@ -13,6 +14,7 @@ export default function App() {
   const { items, loading, error, live, fresh, refresh, markSeen } = useSummaries();
   const [selectedId, setSelectedId] = useState<number | null>(readHash);
   const [panelOpen, setPanelOpen] = useState(false);
+  const [wsOpen, setWsOpen] = useState(false);
   const detail = useSummary(selectedId);
 
   useEffect(() => {
@@ -58,6 +60,7 @@ export default function App() {
             <span className="live-dot" aria-hidden="true" />
             {liveText}
           </span>
+          <button className="btn" onClick={() => setWsOpen(true)}>WebSocket</button>
           <button className="btn" onClick={() => setPanelOpen(true)}>Fetch older calls</button>
         </div>
       </header>
@@ -81,6 +84,7 @@ export default function App() {
       </main>
 
       {panelOpen && <ProgressPanel onClose={() => setPanelOpen(false)} onActivity={refresh} />}
+      {wsOpen && <WebSocketPanel onClose={() => setWsOpen(false)} />}
     </div>
   );
 }

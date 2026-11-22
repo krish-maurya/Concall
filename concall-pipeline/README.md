@@ -18,7 +18,7 @@ Optional OCR for scanned PDFs: install Tesseract.
 | `GET /api/summaries`, `/api/summaries/{id}`, `/api/summaries/{id}/md` | stored summaries |
 | `POST /api/backfill?days=45` | pull historical transcripts for the watchlist |
 | `GET /api/progress?since=N` | recent pipeline events (chunk/merge replies) |
-| `WS /ws` | each finished summary, pushed live |
+| `WS /ws` | each finished summary, pushed live (the React UI's **WebSocket** button shows this URL) |
 | `WS /ws/live` | every pipeline step + raw LLM reply |
 
 ## Test
@@ -34,7 +34,8 @@ Optional OCR for scanned PDFs: install Tesseract.
 - **Summarize (map-reduce):** ~4k-char chunks -> per-chunk extraction -> hierarchical merge sized to the provider's token-per-minute budget (a limiter paces calls). Chunk results are cached on disk so a failed run resumes. Truncated JSON is repaired; truncated replies are retried with a "be shorter" hint.
 - **No hallucination:** prompts allow only the provided text; every key metric carries entity, period and a verbatim quote. Each metric is verified in code: ✅ quote found in transcript *and* the number is inside the quote; 🟡 number exists in the transcript but the quote does not match (check manually); ⚠️ neither.
 - **Schema additions:** `filing_date`, `tone`, metric `entity`/`period`/`quote`/`verified`, `chunks_processed`.
-- **Provider-agnostic:** any OpenAI-compatible endpoint (Groq, Gemini, OpenRouter). No key = mock mode.
+- **Provider-agnostic:** any OpenAI-compatible endpoint (Groq, Gemini, OpenRouter). **A real `LLM_API_KEY` is required**: there is no mock mode and the server refuses to start without one.
+- **Which companies (`WATCH_MODE`):** the exchange feeds are always scanned in full (a couple of cheap HTTP calls per poll); the cost is the LLM, roughly 15-20 calls (~45k input + ~15k output tokens) per transcript. `watchlist` mode (default when `WATCHLIST`/`SYMBOLS` is set) summarises only your 5-10 companies, as the assignment scope says. `all` mode summarises every transcript found, capped by `MAX_SUMMARIES_PER_DAY` (default 40) so spend cannot run away. Newest filings are processed first; anything over the cap waits for the next day.
 - **Clean shutdown:** a stop flag lets worker threads exit on Ctrl+C.
 
 ## Known limitations

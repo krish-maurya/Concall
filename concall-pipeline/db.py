@@ -22,6 +22,10 @@ def save(dedupe_key, text_hash, s, md):
         cur = c.execute("INSERT INTO summaries(dedupe_key,text_hash,company,quarter,call_date,source,url,json,md) VALUES(?,?,?,?,?,?,?,?,?)",
           (dedupe_key, text_hash, s.get("company"), s.get("quarter"), s.get("call_date"), s.get("source"), s.get("source_url"), json.dumps(s), md))
         return cur.lastrowid
+def count_today():
+    """Summaries created today (UTC) - used by the daily LLM-cost cap."""
+    with _lock, _c() as c:
+        return c.execute("SELECT COUNT(*) FROM summaries WHERE date(created)=date('now')").fetchone()[0]
 def list_all():
     with _lock, _c() as c:
         return [dict(r) for r in c.execute("SELECT id,company,quarter,call_date,source,created FROM summaries ORDER BY id DESC")]

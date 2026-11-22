@@ -26,7 +26,7 @@ def is_transcript(text: str) -> bool:
 def fetch_nse(days: int):
     f, t = (date.today() - timedelta(days=days)).strftime("%d-%m-%Y"), date.today().strftime("%d-%m-%Y")
     rows = []
-    for sym in config.SYMBOLS or [None]:  # per-symbol queries avoid the global feed's row cap
+    for sym in (config.SYMBOLS if config.WATCH_MODE == "watchlist" else []) or [None]:  # per-symbol queries avoid the global feed's row cap
         params = {"index": "equities", "from_date": f, "to_date": t, **({"symbol": sym} if sym else {})}
         got = NSE.get("https://www.nseindia.in/api/corporate-announcements", params=params).json()
         rows += got if isinstance(got, list) else []

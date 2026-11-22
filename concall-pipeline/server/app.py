@@ -22,6 +22,12 @@ events = collections.deque(maxlen=500); _seq = itertools.count(1)
 @asynccontextmanager
 async def lifespan(app):
     db.init(); S.STOP.clear()
+    if not getattr(app.state, "no_watcher", False):
+        if not config.LLM_API_KEY:
+            raise RuntimeError("LLM_API_KEY is not set. Put a real key in .env - the pipeline never fabricates summaries.")
+        slog = logging.getLogger("server")
+        slog.info("WATCH_MODE=%s watchlist=%s symbols=%s daily_cap=%s", config.WATCH_MODE, config.WATCHLIST or "-", config.SYMBOLS or "-", config.MAX_SUMMARIES_PER_DAY or "unlimited")
+        if config.WATCH_MODE == "all": slog.warning("WATCH_MODE=all: every concall transcript will be summarised (LLM cost grows with filings; cap=%s/day)", config.MAX_SUMMARIES_PER_DAY or "none")
     loop = asyncio.get_running_loop()
     def on_event(ev):  # called from worker threads
         ev["seq"] = next(_seq); events.append(ev)
