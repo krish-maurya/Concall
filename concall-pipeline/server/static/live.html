@@ -1,0 +1,13 @@
+<!doctype html><meta charset=utf-8><title>Live LLM feed</title>
+<style>body{font:14px system-ui;margin:20px;max-width:1000px}.e{border-left:4px solid #bbb;padding:6px 10px;margin:6px 0;background:#fafafa}
+.chunk_done{border-color:#2a9d6f}.merge_done{border-color:#3b6fd4}.saved{border-color:#d49b1f;background:#fff8e6}.rate_wait,.llm_retry{border-color:#d4531f;background:#fff1ec}.merge_start{border-color:#3b6fd4}.started,.extracted,.chunks_ready{border-color:#888}
+pre{white-space:pre-wrap;font-size:12px;max-height:340px;overflow:auto}#st{color:#777}</style>
+<h2>Live pipeline feed <small id=st>connecting…</small></h2><p><a href=/>← summaries</a> · raw: <a href=/api/progress>/api/progress</a> · WebSocket: <code>/ws/live</code></p><div id=f></div>
+<script>
+const f=document.getElementById('f'),esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function add(e){const t=new Date(e.ts*1000).toLocaleTimeString(),{ts,kind,seq,company,source,reply,...rest}=e;
+const lab=kind=='chunk_done'?`chunk ${e.index}/${e.total}${e.cached?' (cached)':''}`:kind=='merge_done'?(e.final?'FINAL merge':'merge'):kind;
+f.insertAdjacentHTML('afterbegin',`<div class="e ${kind}"><b>${t}</b> · ${esc(company||'')} · ${esc(lab)} <small>${esc(JSON.stringify(rest).slice(0,150))}</small>${reply?`<details open><summary>LLM reply</summary><pre>${esc(JSON.stringify(reply,null,2))}</pre></details>`:''}</div>`)}
+function go(){const w=new WebSocket((location.protocol=='https:'?'wss://':'ws://')+location.host+'/ws/live');
+w.onopen=()=>st.textContent='● live';w.onclose=()=>{st.textContent='reconnecting…';setTimeout(go,2000)};w.onmessage=m=>add(JSON.parse(m.data))}go();
+</script>

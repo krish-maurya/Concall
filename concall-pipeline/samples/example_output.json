@@ -1,0 +1,4 @@
+{"company":"Example Ltd (SYNTHETIC)","scrip_code":"500XXX","nse_symbol":"EXAMPLE","quarter":"Q1 FY26","call_date":"2025-07-24","source":"BSE","source_url":"https://...",
+ "chunks_processed":3,"tldr":["..."],"management_commentary":["..."],"guidance":["..."],"segment_performance":[{"segment":"...","notes":"..."}],
+ "key_metrics":[{"metric":"Revenue","value":"...","context":"...","quote":"...","verified":true}],"notable_qa":[{"question":"...","answer":"...","asked_by":"..."}],
+ "risks":["..."],"tone":{"label":"positive","reason":"..."}}

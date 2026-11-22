@@ -1,0 +1,22 @@
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Concall Pipeline</title>
+<style>body{font:15px system-ui;margin:0;display:flex;height:100vh}#l{width:320px;border-right:1px solid #ddd;overflow:auto}#r{flex:1;overflow:auto;padding:24px;max-width:900px}
+.i{padding:10px 14px;border-bottom:1px solid #eee;cursor:pointer}.i:hover{background:#f4f8f6}.i small{color:#777}h3{margin:12px 14px}.new{background:#e7f7ee}
+table{border-collapse:collapse}td,th{border:1px solid #ddd;padding:4px 8px}#s{font-size:12px;color:#777;margin:0 14px}</style>
+<div id=l><h3>Concalls</h3><p id=s style="margin-bottom:0"><a href=/live>live LLM feed →</a></p><p id=s>connecting…</p><div id=list></div></div><div id=r>Select a summary.</div>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function row(x,fresh){return `<div class="i ${fresh?'new':''}" onclick="show(${x.id})"><b>${esc(x.company)}</b><br><small>${esc(x.quarter||'')} · ${esc(x.call_date)} · ${esc(x.source)}</small></div>`}
+async function load(){const d=await (await fetch('/api/summaries')).json();$('list').innerHTML=d.map(x=>row(x)).join('')||'<p style="margin:14px">Nothing yet — watcher is polling.</p>'}
+async function show(id){const r=await (await fetch('/api/summaries/'+id)).json(),s=r.json,ul=a=>'<ul>'+(a||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+$('r').innerHTML=`<h2>${esc(s.company)} — ${esc(s.quarter||'')}</h2><p><small>${esc(s.call_date)} · <a href="${esc(s.source_url)}" target=_blank>${esc(s.source)} source</a> · <a href="/api/summaries/${id}/md" target=_blank>markdown</a></small></p>
+<h3>TL;DR</h3>${ul(s.tldr)}<h3>Management commentary</h3>${ul(s.management_commentary)}<h3>Guidance</h3>${ul(s.guidance)}
+<h3>Segments</h3>${ul((s.segment_performance||[]).map(x=>x.segment+': '+x.notes))}
+<h3>Key numbers</h3><table><tr><th>Metric<th>Entity<th>Period<th>Value<th>Context<th>✔</tr>${(s.key_metrics||[]).map(m=>`<tr><td>${esc(m.metric)}<td>${esc(m.entity)}<td>${esc(m.period)}<td>${esc(m.value)}<td>${esc(m.context)}<td>${m.verified=='full'||m.verified===true?'✅':m.verified=='number_only'?'🟡':'⚠️'}</tr>`).join('')}</table>
+<h3>Notable Q&A</h3>${(s.notable_qa||[]).map(q=>`<p><b>Q (${esc(q.asked_by)}):</b> ${esc(q.question)}<br><b>A:</b> ${esc(q.answer)}</p>`).join('')}
+<h3>Risks</h3>${ul(s.risks)}<h3>Tone: ${esc((s.tone||{}).label)}</h3><p>${esc((s.tone||{}).reason)}</p>`}
+function connect(){const w=new WebSocket((location.protocol=='https:'?'wss://':'ws://')+location.host+'/ws');
+w.onopen=()=>$('s').textContent='● live';w.onclose=()=>{$('s').textContent='reconnecting…';setTimeout(connect,2000)};
+w.onmessage=e=>{const s=JSON.parse(e.data);$('list').insertAdjacentHTML('afterbegin',row(s,true));show(s.id)}}
+load();connect();
+</script>
