@@ -1,0 +1,164 @@
+{
+  "company": "Tata Motors Passenger Vehicles Limited",
+  "scrip_code": null,
+  "nse_symbol": "TMPV",
+  "quarter": "Q2 FY27",
+  "call_date": "19-Nov-202",
+  "source": "NSE",
+  "source_url": "https://nsearchives.nseindia.in/corporate/TATAMOTORSSJS_19112026202307_NSEBSETranscriptQ2FY27.pdf",
+  "chunks_processed": 12,
+  "tldr": [
+    "Q2 FY27 saw strong launch momentum with Tata.CARS brand and Aeris sedan in India, and three new luxury EVs at JLR.",
+    "Consolidated revenue ~Rs. 97,000 Cr, up 34% YoY; EBITDA margin 6.2%, EBIT margin 1.1%; PBT before exceptional items ~Rs. 400 Cr.",
+    "Exceptional charges of Rs. 6,700 Cr recorded at JLR.",
+    "Consolidated net debt closed at ~Rs. 51,000 Cr.",
+    "India business revenue hit Rs. 20,000 Cr, up 50% YoY, with EV market share 43% and 23% penetration."
+  ],
+  "management_commentary": [
+    "Launch of Tata.CARS brand and Aeris sedan drove best‑ever offtake and retail month in October 2026.",
+    "JLR launched three new luxury electric vehicles with deliveries expected from early 2027.",
+    "Alternate powertrains now account for more than half of volumes.",
+    "Commodity pressures expected to remain elevated in Q3 with further increases in steel, rubber, and copper.",
+    "Strong portfolio launches drive growth; capacity expansion underway.",
+    "Will capitalize on greener powertrains and scale production capacity.",
+    "Strengthening profitability through cost reduction, PLI approvals, and pricing actions.",
+    "We will keep increasing price progressively where headroom exists.",
+    "We are confident we can offset PLI benefits with price and cost strategies."
+  ],
+  "guidance": [
+    "FY27 EBIT 2–3% range.",
+    "FY27 cash outflow ~GBP 1.25bn.",
+    "FY28 double‑digit EBITDA and cash generation.",
+    "FY30 return to net cash."
+  ],
+  "segment_performance": [
+    {
+      "segment": "Tata Motors Passenger Vehicles",
+      "notes": "Launch of Aeris sedan and Tata.CARS brand drove record offtakes."
+    },
+    {
+      "segment": "Jaguar Land Rover",
+      "notes": "Three new luxury EVs launched; recovery from cyber incident."
+    },
+    {
+      "segment": "India business",
+      "notes": "Revenue Rs. 20,000 Cr, 50% YoY growth; 67,000 monthly offtakes, 14.3% market share."
+    },
+    {
+      "segment": "EVs",
+      "notes": "Highest quarterly volumes, 16,000 monthly offtakes, 43% market share, 90% YoY growth."
+    },
+    {
+      "segment": "Defender",
+      "notes": "Sales up >20% YoY; UK wholesales strong, China and MENA declining."
+    }
+  ],
+  "key_metrics": [
+    {
+      "metric": "Consolidated revenue",
+      "value": "Rs. 97,000 Cr",
+      "context": "Q2 FY27",
+      "quote": "Consolidated revenue for TMPV Group was ~96,000Cr, close to Rs. 97,000 Cr, up 34% year-on-year.",
+      "verified": true
+    },
+    {
+      "metric": "EBITDA margin",
+      "value": "6.2%",
+      "context": "Q2 FY27",
+      "quote": "EBITDA margin was 6.2%.",
+      "verified": true
+    },
+    {
+      "metric": "EBIT margin",
+      "value": "1.1%",
+      "context": "Q2 FY27",
+      "quote": "EBIT margin 1.1%.",
+      "verified": true
+    },
+    {
+      "metric": "PBT before exceptional items",
+      "value": "Rs. 400 Cr",
+      "context": "Q2 FY27",
+      "quote": "PBT before exceptional items stood at around Rs. 400 Cr.",
+      "verified": true
+    },
+    {
+      "metric": "Exceptional charges",
+      "value": "Rs. 6,700 Cr",
+      "context": "Q2 FY27",
+      "quote": "We also recognized exceptional charges of Rs. 6,700 Cr this quarter.",
+      "verified": true
+    },
+    {
+      "metric": "Revenue",
+      "value": "Rs. 20,000 Cr",
+      "context": "Quarterly record",
+      "quote": "Revenue touched a record Rs. 20,000 Cr in the quarter, up 50% year-on-year.",
+      "verified": true
+    },
+    {
+      "metric": "EV market share",
+      "value": "43%",
+      "context": "EV segment Q2",
+      "quote": "Our EV market share rose to 43% despite rising competition.",
+      "verified": true
+    },
+    {
+      "metric": "Average price increase",
+      "value": "1.7%",
+      "context": "ICE and EV portfolio in 2024",
+      "quote": "we have taken about 1.7% price increase across three hikes",
+      "verified": true
+    },
+    {
+      "metric": "FY27/FY28 benefit",
+      "value": "£1.7bn",
+      "context": "split between ex‑works, warranty, cost efficiencies",
+      "quote": "shows the split of GBP 1.7 billion between what we're anticipating from ex‑works",
+      "verified": true
+    }
+  ],
+  "notable_qa": [
+    {
+      "question": "How are commodity pressures expected to evolve?",
+      "answer": "Commodity pressures remain elevated in Q3 with further increases in steel, rubber, and copper, but are expected to plateau in Q4.",
+      "asked_by": "Investor"
+    },
+    {
+      "question": "What is the plan for Capex?",
+      "answer": "H1 Capex was Rs. 2,700 Cr; we expect higher spending over the next 18 to 24 months for capacity builds.",
+      "asked_by": "Analyst"
+    },
+    {
+      "question": "What percentage of bookings are EVs?",
+      "answer": "Roughly 30% of bookings are EV bookings, 40–45% of pending bookings are EVs.",
+      "asked_by": "Kapil"
+    },
+    {
+      "question": "What is the rough price hike this year?",
+      "answer": "About 1.7% across ICE and EV models.",
+      "asked_by": "Investor"
+    },
+    {
+      "question": "What benefit will we get in FY27/FY28?",
+      "answer": "£1.7bn split across ex‑works, warranty, and cost efficiencies.",
+      "asked_by": "Investor"
+    },
+    {
+      "question": "What is the restructuring cost?",
+      "answer": "£530m this quarter, £295m from voluntary redundancy.",
+      "asked_by": "Investor"
+    }
+  ],
+  "risks": [
+    "Commodity price pressures",
+    "Supply constraints in select value chain areas",
+    "Adverse commodity pressures likely to remain in Q3",
+    "China market continues to decline at alarming speed",
+    "MENA demand and logistics struggle due to conflict"
+  ],
+  "tone": {
+    "label": "cautious",
+    "reason": "Management highlights elevated commodity pressures, supply constraints, and market declines while projecting growth and cost controls."
+  }
+}

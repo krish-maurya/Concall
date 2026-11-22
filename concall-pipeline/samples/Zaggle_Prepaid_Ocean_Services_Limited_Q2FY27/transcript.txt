@@ -1,0 +1,205 @@
+ZAGGLE/26-27/103
+To                                       To
+Listing Department                          The Corporate Relations Department
+NATIONAL STOCK EXCHANGE OF INDIA LIMITED   BSE LIMITED
+Exchange Plaza, Plot No C/1, G Block               Phiroz Jeejeebhoy Towers,
+Bandra Kurla Complex, Bandra (East),               25th Floor, Dalal Street,
+Mumbai -400 051, Maharashtra              Mumbai -400 001, Maharashtra
+
+Company Symbol: ZAGGLE                  Company Scrip Code: 543985
+Dear Sir / Madam,
+Sub: Transcript of Earnings Call held on November 13, 2026.
+Pursuant to the Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure
+Requirements), Regulations 2015 and further to our letter no. ZAGGLE/26-27/94 dated November 09, 2026, please find attached the Transcript of the said earnings call on the Company’s operational and financial performance for the quarter and half year ended on September 30, 2026, and the same has been uploaded on the website of the Company on the following web link: https://zaggle-corporate-website.s3.ap-south-
+1.amazonaws.com/uploads/zaggle-earning-call-transcript-Q2FY27.pdf
+We request you to kindly take the same on records.
+Thanking you,
+Yours faithfully,
+For Zaggle Prepaid Ocean Services Limited
+Digitally signedHari    by Hari Priya
+Date:
+2026.11.20Priya   18:00:05 +05'30'
+Hari Priya
+Company Secretary and Compliance Officer
+Encl. As Above
+“Zaggle Prepaid Ocean Services Limited
+Q2 FY27 Earnings Conference Call”
+E&OE: This transcript is edited for factual errors. In case of discrepancy, the audio recordings uploaded on the stock exchange on November 13, 2026, will prevail.
+MANAGEMENT: DR. RAJ NARAYANAM – EXECUTIVE CHAIRMAN –
+ZAGGLE PREPAID OCEAN SERVICES LIMITED
+MR. AVINASH GODKHINDI –CHIEF EXECUTIVE
+OFFICER AND MANAGING DIRECTOR – ZAGGLE
+PREPAID OCEAN SERVICES LIMITED
+SGA, INVESTOR RELATIONS ADVISORS
+
+Moderator:                Ladies and gentlemen, good day and welcome to Zaggle Prepaid Ocean Services Limited Q2
+FY27 Earnings Conference Call.
+Before we begin, a brief disclaimer. This conference  call may contain forward-looking statements about the company, which are based on beliefs, opinions, and expectations of the company as on date of this call. These statements are not guarantee of future performance and involves risks and uncertainties that are difficult to predict.
+As a reminder, all participants' lines will be in listen-only mode, and there will be an opportunity for you to ask question after the presentation concludes. Should you need assistance during this conference call, please signal an operator by pressing star then zero on your touchtone phone.
+Please note that this conference is being recorded.
+I now hand over the conference to Dr. Raj Narayanam, Executive Chairman. Thank you, and over to you, sir.
+
+Raj Narayanam:         Thank you. Thank you so much. A very good evening to everyone. Thank you for joining the earnings call for Zaggle Prepaid Ocean Services Limited for Q2 and H1 of fiscal year 2027. On behalf of the company, I extend a very warm welcome to all of you. The financial results, press release, and investor presentation are uploaded on the stock exchange and on the company website. I hope everybody has had a chance to look at it.
+I would like to start by elaborating more on our three key focus areas, which is revenue,
+EBITDA, and operating cash flow. On revenue, our total revenue growth of 34% reflects strong operational momentum across both our standalone business as well as our subsidiaries. The festive season fueled strong growth in our overall loyalty and reward segment, driving revenue increases not only for Zaggle but also for our subsidiary, GreenEdge.
+In Q2 FY27, we also saw SaaS revenue coming from our Dice acquisition, which I will elaborate more on later. Also very glad to announce that for the first time in our H1, we have crossed
+INR1,000 crores. On EBITDA, in Q2 FY27, our adjusted EBITDA margin on a consolidated basis stood at about 7.7%. There are a few points which I wanted to address on the EBITDA
+margin.
+As highlighted in the previous quarter, we had incurred transaction-linked expenses and the relocation expenses related to Dice acquisition following the onboarding of 100 plus AI
+professionals. This quarter, a full three-month salary base for these professionals was recorded under employee benefits expenses. However, this increase in payroll cost was offset by revenue from the novated Dice contracts, and we expect a further uptick as the remaining contract novations are finalized.
+Currently, about 65% to 70% of the contracts are novated, and rest should happen in this quarter.
+On the subsidiary and investee company performance, we saw GreenEdge, Mobileware, and
+TaxSpanner as well contribute positively to the EBITDA margin. Zagg.money, as highlighted previously, we can expect some burn over the next few quarters as we look to scale up our user base there. I will dive deeper into each of these shortly.
+We also saw a rise in other expenses as we continue to push certain tech and AI costs into P&L
+directly, as guided earlier. On the operating cash flow, I am very happy to announce that we have achieved a positive operating cash flow, not only at a standalone basis, but also at a consolidated basis for Q2 FY27.
+I would like to take this opportunity to laud the efforts of the business and finance teams to be able to achieve this turnaround. There are some of the actions which we have taken, which have yielded success over the last few months. On the banking side, we are giving preference to those banks who are willing to work on more suitable invoicing patterns and payment terms.
+On the Propel side, we have been extremely mindful of onboarding new corporates who operate on long redemption cycles, and we have also successfully altered payment cycles of few of our existing customers by switching to a half-monthly invoicing. We have also started taking customer advances from some of our new customers, which also had a positive impact on our operating cash flow.
+We are keeping our feet on the ground as these are early wins, and we have a long distance to travel. We remain committed to maintaining and accelerating our efforts towards further improving operating cash flow in the coming quarters. Now, I would like to give an overview of Zaggle investments and acquisitions.
+I would like to start with an update on Dice. To refresh memory, we closed the acquisition in the middle of Q1 FY27. As discussed in the previous earning calls, we had incurred expenses relating to relocation and other transaction-linked expenses, plus all these 100 plus employees, we had to absorb them, and the revenue being expected to kick in from Q2 FY27 onwards. I am very happy to update that we have completed the novation of around 65% to 70% of contracts, with the balance expected to close in Q3.
+As part of the entire novation, we have inherited marquee customers such as Hindalco, Trident,
+Bajel, Aakash, IDFC  First Bank, HDB Financial, amongst others. This acquisition has significantly accelerated our technology roadmap, enhancing the AI capabilities of Zaggle, and by leveraging Dice expertise in automated spend analytics, intelligent approval workflows, and predictive expense management, we are delivering greater operational efficiency and value to our corporate clients.
+Next, I would like to talk about Zagg.money. We have seen a massive increase in the users as well as the transactions count over the last few months, which is largely driven by multiple features delivering a superior user experience.
+I am glad to announce that despite this unprecedented scale, we were successfully able to monitor and defend against frauds without hampering our user experience, having created multiple layers of defense, such as the in-house intelligence pattern checks, RASP framework, which is the Runtime Application Self-Protection, and SMV, which is the Silent Mobile
+Verification Implementation.
+Our focus continues to be on user acquisition and growth across our three co-branded credit cards, as well as UPI transactions. With UPI becoming a good engagement acquisition channel for us, the positive traction on UPI comes at an opportune time, particularly with MDR on UPI
+on the horizon, which is poised to be a significant tailwind for Zagg.money. Our key funnel still remains the large Zaggle salaried user base, where we anticipate a positive upside coming through while we remain mindful of spends on open sourcing.
+Next, I would like to talk about our investment in 86400, earlier known as Mobileware.
+Revenues grew to around INR22.4 crores in Q2 FY27. EBITDA grew to about INR6 crores in
+Q2 FY27, and PAT grew to around INR3 crores in Q2 FY27. I am extremely happy to announce that 86400 has processed transactions worth around INR3 lakh crores just in H1 FY27, a 26%
+jump as compared to the last year.
+On ongoing engagements, 86400 has progressed well in its first international engagement with
+LankaPay, and we are looking to close out bank integrations in the upcoming quarters. Along with this, 86400 also went live with Fino Payments Bank for their Bharat Bill Payment stack.
+Next, I would like to talk about GreenEdge, which runs the golf privileges program for various banks and networks like ICICI, Amex, among others, along with the entire reward program for
+NPCI.
+The revenues grew significantly to around INR58 crores. EBITDA stood at about INR2.6 crores in Q2 FY27, and PAT was around the same number. Next, I would like to talk about TaxSpanner.
+I am pleased to announce that TaxSpanner has achieved a revenue of roughly about INR2.1
+crores in H1 FY27, and marking an increase of around 22.6% over the last year.
+Would also like to note that we are comparing TaxSpanner business on half-year basis due to change in the tax filing deadline in the previous year. They have achieved an EBITDA breakeven in H1 FY27. We remain cautious considering H1 is generally more skewed on the revenue in this business. We continue to work hard to achieve full breakeven for the entire year, and we will keep all of you posted in the subsequent quarters on the same.
+Having completed the multiple acquisitions over recent quarters, our immediate focus is on seamless integration to unlock synergies and operational leverage. Consequently, our approach to new M&A remains strictly disciplined and selective, targeting high-value opportunities in adjacent domestic and international markets.
+Now, I would like to take this opportunity to address our AI investments as well. As always, I
+will cover this section in two parts. First, the internal efficiencies delivered by AI, and second, how AI enhances our client-facing offerings. On the internal front, as highlighted earlier, AI-
+driven initiatives have already delivered tangible cost optimization, generating an approximately
+10% to 15% gain in people cost efficiency.
+Not only has the development speed accelerated significantly, where our time to launch for new products modules has reduced by roughly 50%, we have also significantly accelerated go-lives with customers aiding in faster revenue realization.
+Reinvesting this freed-up bandwidth and leveraging AI-assisted engineering has allowed us to accelerate our  shift towards a modular microservices  architecture while  systematically refreshing existing product modules. On the client-facing front, there is no better proof of our progress than the successful deployment and go-live of our full-stack Agentic accounts payable platform in phase one, ahead of time, at a very, very large client in the manufacturing and metals and minerals space, which we spoke about in the last earnings call.
+As part of the deployment, we have embedded seven specialized AI agents within the accounts payable workflow. Together, they automate the end-to-end process, spanning invoice ingestion, document extraction, fraud and duplicate validation, auto-categorization, PO matching, GRN
+matching, and TDS compliance. By deploying our full-stack AI solution, we have rapidly configured and automated four critical finance workflows.
+First, executing three and four-way matching across PO, invoices, GRN, and delivery challan, with about 24 plus validation checks. Second, automating liquidated damages calculations across key logistics touchpoints. Third, streamlining vendor payment holds based on shipment compliance.
+Lastly, applying real-time rule-based TDS and GST tax logic. Through this implementation, we are looking to drive significant operational efficiency in the process, including approximately
+60% touchless processing of invoices with zero human intervention, 50% reduction in exception resolution time, 100% end-to-end reconciliation across GST and TDS compliance.
+This go-live reflects a broader trend across our existing and potential customer base, where we are  actively  deploying  similar  Agentic  AI  workflows  for  major  enterprise  clients.
+Groundbreaking deployments like these demonstrate the tangible returns on our AI investments, proving that our technology is both commercially viable and essential for complex, large-scale enterprise operations.
+We look forward to showcasing these AI developments to give all of you a deeper look into our
+AI capabilities and our roadmap at our upcoming Investor Day, which we plan to host on 10th of December in Mumbai. Now, I would like to give an update on our international expansion plans.
+Happy to announce that we have opened our subsidiary, Zaggle Holdings Limited, in ADGM, which is Abu Dhabi Global Market, International Financial Center and Free Economic Zone.
+While remaining mindful of regional volatility, we are seeing great traction in early customer and partner conversations. The initial feedback confirms strong product fitment, and we are excited about the growth potential as we build out on our footprint.
+Now with this, I would want to hand over to Avinash Godkhindi, CEO and MD.
+
+Avinash Godkhindi:      Thank you, Dr. Raj. A very warm welcome to everyone joining us on the call today. I'd now like to give an overview of the key metrics. I'm very happy to share that today, around 4 million users actively use Zaggle-powered cards and software, a strong testament to the scalability and adaptability of our platform. We now serve more than 4,200 corporate customers across a wide spectrum of industries and sectors. Talking about our consolidated revenue mix for Q2 FY27, our SaaS platform fees contributed around INR16 crores, program fees contributed around
+INR195 crores, and Propel Points contributed around INR369 crores.
+Talking about our consolidated revenue mix for H1 FY27, our SaaS platform fees contributed around INR28.5 crores, program fees contributed around INR355 crores, and Propel Points contributed around INR619 crores. I would now like to talk about a few key business highlights.
+I'll start with our upcoming updates on Save business. On the tax benefit side of Zaggle Save, momentum remains strong in line with our prior guidance. Favorable updates to income tax regulations have broadened wallet adoption under the new tax regime and increased allowable limits for meal, gifts, and employee benefit categories.
+We have signed multiple marquee names, including R Systems, Kerala Fibre Optic Network,
+Vivo Mobiles, Amar Ujala, Jubilant Pharmova, APAC Financial, Vikram Solar, SBM Bank,
+RPG Enterprises, amongst others. We have seen a tremendous upswing in the new user onboarding from existing accounts, as well as especially from users who we earlier missed out on being on the new tax regime. On the travel and reimbursement side of our Save business, we have seen the uptake with the novation of the Cleartrip contract, which we inherited from Dice.
+In addition to the list last quarter, we have additionally completed the novation of Birla Opus and HDB Financial, to name a few. Next, I would like to talk about the key updates in our Zoyer business. We are experiencing significant positive traction in our Zoyer business, driven by a targeted AI-powered rollout across our previously onboarded customer base.
+The large retail chain, whose example I gave in the previous earning calls, has seen successful onboarding of more than 5,500 stores, a massive increase from 2,000 stores highlighted previously in a short span of time. We have also signed up marquee names such as FirstRand
+Bank, Netmeds, P N Gadgil Jewellers, Bandhan AMC, amongst others. We have also inherited clients from Dice, such as Hindalco, Bajel Projects, Resustainability, and Navi, amongst others.
+Now, I would like to take an opportunity to go deeper on a couple of key projects we are working on. We are currently engaging with a large conglomerate in the textile space. The problem statement they are facing, vehicle inward, material inspection, and accounts payable were run through a manual disconnected process, and the SAP access was limited due to licensing costs.
+The solution we have implemented was a fully integrated digital, and the entire accounts payable workflow sitting as a layer integrated with their SAP ERP. We have deployed three agents which cover document extraction, purchase order matching, and an auto-categorization agent. When we think of it, the same line item, which could be a raw material, ancillary cost, packaging, et cetera, sits on many open purchase orders at once.
+When this line item appears on every new invoice, the entire matching and categorization to the specific open purchase order happens within seconds, helping in a quick turnaround post the material inspection. The impact of this  is that the conglomerate  is seeing faster vehicle turnaround, revenue leakage control through credit note automation, and a centralized access control dashboard where information is available to relevant stakeholders without having to pay for an additional SAP license.
+The next example I would like to give is, I want to talk about our engagement with a large EPC
+company, which manages an ecosystem of more than 10,000 vendors, most of which are classified as MSMEs, and processes around 40,000 invoices a year across  its different manufacturing and project sites. The problem statement they are facing is as follows.
+One, the entire vendor onboarding was manual and took more than four days to onboard a single small vendor. Two, invoice processing ran on a manual email-driven workflow that needed more than 15 resources to reconcile and process. Three, procurement, invoicing, and payments sat on different systems, not only making it harder to manage operationally, but also making it hard to enforce statutory compliance for tax and MSME payments.
+The solution we have implemented was our core accounts payable stack, which has helped in automating these workflows. We are also deploying our AI-driven RFX module, consisting of multiple pre-set templates and questionnaire builders, along with a weighted multi-attribute auction mechanism. Here, we are providing copilots for vendor onboarding, RFX drafting, negotiation, and collusion detection, along with agents for document verifications and statutory validations. The impact is as follows.
+One, vendor onboarding fell from four days to 15 minutes, with 14 statutory validations being automated. Two, entire invoice processing is now AI-powered, not only for data extraction, but even three-way matching. The entire load is now managed by just three people, where earlier 15
+people were used, freeing up significant bandwidth and resource cost.
+The digitization of the process has helped them get near real-time visibility into their working capital, and  instances  of  duplicate payments, delayed MSME payments have reduced considerably. Next, I would like to talk about the key updates in our Propel business. As always, we see positive uptick in redemptions in the current festive period.
+During the quarter, we signed up marquee names such as DCM Shriram, Hero Cycles, amongst others. I want to briefly touch base on our cross-sell initiatives. Leveraging AI, we have equipped our on-ground sales teams to pitch and solution for multiple products in the same go, while dealing with different stakeholders across varied problem statements. In Q2 FY27, marquee cross-sell wins included Techno Sportswear, Centrient Pharma, Smartworks, Aditya Auto, amongst others.
+Lastly, I would like to talk to all of you through some key financial updates. With reference to
+Propel Points margin on a consolidated basis, we have reached a margin of around 5.3%. The
+Propel Points margin has normalized in the current range from the earlier quarter, which is Q1
+of FY27, which had some spillover of overriding commissions and hence seemed elevated.
+With reference to a cashback as a percentage of program fees, we saw the cashback at around
+66.2% in Q2 of FY27, which is an improvement, marginal improvement in the cashback from the previous quarter, but a massive improvement from Q4 of FY26, where cashback was around closer to 69%.
+With this, I'd like to open the floor for questions.
+
+Moderator:              Thank you very much. We will now begin with the question and answer session. The first question is from the line of Rohan from Equirus Securities. Please proceed with your question.
+Rohan:                Good evening, sir. Thanks for the opportunity and congrats on the operating cash flow turning positive. Sir, with respect to the guidance for FY27 on EBITDA, can you share how should one think on that? Since the Dice acquisition is complete and we now have all the first items in place.
+
+Avinash Godkhindi:        Hi, Rohan. Thanks for the good wishes. See, our focus, as we have previously also reiterated, has been to look at turning positive on the operating cash flow, and that remains a key focus.
+While EBITDA margins are lower than last year, we expect them to be in a similar range as we currently are, around 7%, 8%. We want to be very calibrated in how we look at our cash flows and our capitalization. That is the whole idea, that we want to control the capitalization, and we want to be positive on the OCF.
+Rohan:                  Got  it. Secondly, sir, on the Save, the tailwind that we are getting from the change in tax regulation. Just if you can highlight in terms of the gross loads or the loads which are happening on the card this year versus last year's first half. Are we seeing an increase because the program fee revenues is not showing a meaningful jump? That is what we are just trying to understand how should one look at the benefit. Is that already flowing through in the flows, or it will take time?
+
+Avinash Godkhindi:        See, the flows, Rohan, it is grown significantly. It is a 6x growth in terms of the loads. But of course, those balances are sitting on the card, so the spends come through later. But in terms of the loads, the loads have grown very significantly, and that is quite in line with our internal expectation.
+Because the two things have happened, just to reiterate for the group. One, old tax regime and new tax regime, both are now able to give meal allowance, gift, books, and periodicals. All the allowances are now available. And the second is the amount also has gone up multifold. So, for example, meal, it is a 4x, gift, it is a 3x. So, naturally, the loads have also gone up significantly.
+
+Moderator:              Thank you. The next question is from the line of Siva from iThought PMS. Please proceed with your question.
+Siva:                       Hi, sir. Good evening. My first question would be, how much of our Q2 revenue is from Dice, and what would be the cost base for them as well?
+
+Avinash Godkhindi:       Dice revenue is entirely in the SaaS income, and as we mentioned, about 65%-70% of those contracts have novated. Still, about 30%-35% of the contracts are yet to novate. Also, as you are aware, novation of a contract doesn't mean that revenue will start on Day Zero. Once the contract novates, then there is a lag. Today, about INR16 crores that we have, a small part of it is coming from Dice contracts. But as we see in the Q3, Q4, the full impact will come through.
+Siva:                    Got it. Could you maybe give us a rough figure on how much the run rate would be, sir, for
+Dice? How much it could add for us?
+
+Avinash Godkhindi:        Last year, their overall steady revenues was about INR14-odd crores. That eventually will come through, and then a lot more would come through for us in terms of deployment of that in contracts that were pending go-live, as well as our ability to be able to take that platform and offer it to our customer base in terms of cross-sell, upsell, and fresh market acquisition.
+
+Moderator:              Thank you. The next question is from the line of Indradev from Eternal Access. Please proceed with your question.
+Indradev:                   Hello. Good evening, sir. This is Indradev. I have a three-part question on UPI monetization.
+My  first question  is, government recently moved to introduce tiered MDR on high-value merchant UPI transactions while keeping us not payment free. How do you see the regulatory stance evolving from here? My second question is, the overall financial impact of this partial
+MDR rollout on the fintech sector, and especially on Zaggle, especially as you scale your UPI
+in-pay offering.
+
+Avinash Godkhindi:       Yeah.
+Indradev:                Okay, sir.
+
+Avinash Godkhindi:      Thank you. I briefly sort of got your question. What I understand is you wanted to ask whether
+UPI on MDR is going to have a positive impact on our business, and overall, how is it going to look on the fintech industry? We see this to be a very significant move for Zaggle and Zagg
+Money especially, which is a TPAP, because today we are doing huge volumes of transactions, over 3 million transactions a month, and those are all going to generate some amount of revenue going forward.
+So that's going to be a plus for us. When will it get implemented? Of course, sir, that's dependent on the government. The message that we've heard is it's after Diwali. So hopefully sometime soon, this measure will be in force.
+
+Moderator:              Thank you, sir. The next question is from the line of Harsh from HRS Enterprises. Please proceed with your question.
+Harsh:                      Hello, am I audible?
+
+Avinash Godkhindi:       Yes, sir.
+
+Moderator:                Yes, sir. You are audible.
+Harsh:                  Thank you for the opportunity. I wanted to inquire about, there is one line item in our balance sheet under other assets called prepaid card loading. I am talking about the year-end balance sheet, and the corresponding amount is INR264 crores. In previous con calls, I think you have mentioned that we have been pre-loading some cards to help our clients with their working capital needs. I just wanted to understand, when you say pre-loading of cards, are we talking about the expenses we bear on our side, or are we talking about the balance that is there in that card?
+
+Avinash Godkhindi:       Thanks for your question, Harsh. It is the balance in the card. We load those cards because we want to be able to deliver those cards at near real time. When people make a loading request, which is sometimes not even rounded number, you may then need to, depending on the points that they have, right?
+You need to have some balances already there and cards loaded across different denominations to be able to fulfill that need. That is something that is a fairly standard industry practice. Having said that, overall, we have got a good handle on our other current assets, and if you see, those numbers have come down slightly from the year-end numbers that you are mentioning. I think we are in good shape there.
+
+Moderator:              Thank you. The next question is from the line of Rohan from Equirus Securities. Please proceed with your question.
+Rohan:                  Thanks for the opportunity again. This is a follow-up to the Save GTV question that we were discussing. Since we are seeing a 6x load, whatever spends happen during the second half of the year, will that not flow down to EBITDA and help improve EBITDA margin for the second half? Just trying to understand why we are guiding for a flattish EBITDA for the full year.
+
+Avinash Godkhindi:       Rohan, again, good question. Save has two components. One is T&E, and the other is your employee benefits, first of all. Overall program fees gets generated across Propel, Save, and
+Zoyer. Program fees is one of the three components that we have, right?
+You can see how many layers are there in the revenue. Yes, it will have a positive impact on the program fees, but we just want to be cautious about giving any guidance around EBITDA. We are erring on the side of caution. But yes, it should have a positive impact on our program fees revenue line.
+Rohan:                     In terms of, if you look at the disclosure, GreenEdge and Mobileware, EBITDA has declined sequentially. What explains that?
+
+Avinash Godkhindi:       Yeah, Rohan, see, Mobileware, some of the EBITDA that came in last quarter was because of one-time events. Similarly, in GreenEdge, while the revenue has grown, you have to also appreciate that that business, just like Propel Points, as revenue grows, it's not necessary that the margins will grow sequentially.
+We've also invested in these businesses a lot in ensuring that the security is top-notch, because
+Mobileware is a UPI switch and plus plus, as well as GreenEdge, you're running redemptions for NPCI. That has its own set of investments that go in terms of ensuring the product is running smoothly in a safe manner.
+
+Moderator:              Thank you. Ladies and gentlemen, if you wish to ask a question, please press star and one now.
+The next question is from the line of Siva from iThought PMS. Please proceed with your question.
+Siva:                       Hi, thanks for the follow-up. Sir, on the program fee, the growth has slowed down to around
+10%, right? Which I understand is because you are working around partner banks for better invoicing for cash flows. I just wanted to understand by when can we expect this growth to go back to 20%-30% rate?
+
+Avinash Godkhindi:      Thank you. Thank you for your question, Siva. See, ultimately we are balancing out on two factors, right? Keeping the cash back at a controlled level. So we have kept it at about 66%. We have also focused on trying to get revenues at a faster pace from, as in the cash flow from a faster pace from our customers, right? Quarter-on-quarter, we have grown 22%. Year-on-year, you are right, we are at about 12.5%. But we see some momentum kicking in this quarter, and hopefully between this quarter and next quarter, we will see some good momentum coming through.
+Siva:                      Understood. Sir, on our program fee, how much of the GTV is currently from UPI, sir? How much would be eligible for MDR? I am just trying to understand how much could be our incremental revenue if MDR is implemented.
+
+Avinash Godkhindi:       Right now, the GTV that we talk of, Siva, does not include the UPI transactions. That's, I just shared the number for Zagg Money was about 3 million transactions month on month. The number of transactions and values are significant, so hopefully we'll see some good outcomes there.
+Siva:                    Got it. Would it be possible to quantify any numbers, sir? Like any rough figure, how much would the incremental for us?
+
+Avinash Godkhindi:         Difficult to quantify, Siva, but we also mentioned to you on 86400, for example, that we've processed in H1 INR3 lakh crores worth of transactions. That's 86400. There again, we should see some upside on the UPI transactions. Difficult at this moment to quantify because we also don't exactly know finally what is the quantum of MDR that the government will bring in while we obviously-
+
+Raj Narayanam:        When they will bring it.
+
+Avinash Godkhindi:      And when they will bring it.
+
+Moderator:              Thank you. Ladies and gentlemen, that was the last question from the participant. I now hand over the conference to management for their closing comments.
+
+Raj Narayanam:         Thank you all for participating in today's call. We hope we have addressed all your queries and provided valuable insights. We remain optimistic and focused on the future growth of the company, and we are excited about the opportunities ahead. For any further information, we request you to get in touch with SGA, our Investor Relations Advisors. Thank you and have a nice day.
+
+Moderator:              Thank you. On behalf of Zaggle Prepaid Ocean Services Limited, that concludes this conference.
+Thank you for joining us, and you may now disconnect your lines. Thank you.

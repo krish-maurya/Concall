@@ -1,0 +1,149 @@
+{
+  "company": "Kaynes Technology India Limited",
+  "scrip_code": null,
+  "nse_symbol": "KAYNES",
+  "quarter": "Q2 FY26",
+  "call_date": "2026-11-16",
+  "filing_date": "2026-11-20",
+  "source": "NSE",
+  "source_url": "https://nsearchives.nseindia.in/corporate/KAYNESTECH_20112026152655_TranscriptoftheEarningAnnouncement.pdf",
+  "chunks_processed": 17,
+  "tldr": [
+    "Q2 FY27 consolidated revenue INR9,525 million, EBITDA INR1,256 million (13.2% margin), PAT INR398 million.",
+    "H1 FY27 revenue INR18,987 million, EBITDA INR2,681 million (14.1% margin).",
+    "Order book INR105,635 million.",
+    "Kaynes Semicon Unit 2 and Kaynes Circuits operational with customer approvals.",
+    "Acquisition of Toyokawa JV expands into thin‑film transistor display modules."
+  ],
+  "management_commentary": [
+    "Kaynes is moving up the value chain from PCBA to a design and product company.",
+    "Focus on balance sheet strength and cash discipline while investing for long‑term growth.",
+    "Strategic growth engines: Kaynes Semicon and Kaynes Circuits.",
+    "Entry into aerospace, railways, space, and medical electronics.",
+    "Partnership with Vishay is a long‑term strategic arrangement."
+  ],
+  "guidance": [],
+  "segment_performance": [
+    {
+      "segment": "Kaynes Semicon Unit 2",
+      "notes": "Operational with customer approvals."
+    },
+    {
+      "segment": "Kaynes Circuits",
+      "notes": "Operational with customer approvals."
+    },
+    {
+      "segment": "PCB Unit 1",
+      "notes": "Will start generating revenue from Q3 FY27 itself."
+    },
+    {
+      "segment": "EMS",
+      "notes": "Revenue more than 92% of overall revenue in the quarter."
+    },
+    {
+      "segment": "Metering",
+      "notes": "Less than 10% of overall revenue in the quarter."
+    }
+  ],
+  "key_metrics": [
+    {
+      "metric": "Consolidated revenue",
+      "entity": "Consolidated",
+      "period": "Q2 FY27",
+      "value": "INR9,525 million",
+      "context": "Quarterly revenue",
+      "quote": "For Q2 FY27, our consolidated revenue stood at INR9,525 million.",
+      "verified": "full"
+    },
+    {
+      "metric": "EBITDA",
+      "entity": "Consolidated",
+      "period": "Q2 FY27",
+      "value": "INR1,256 million",
+      "context": "Quarterly EBITDA",
+      "quote": "EBITDA for the quarter was INR1,256 million.",
+      "verified": "full"
+    },
+    {
+      "metric": "EBITDA margin",
+      "entity": "Consolidated",
+      "period": "Q2 FY27",
+      "value": "13.2%",
+      "context": "Quarterly margin",
+      "quote": "with an EBITDA margin of 13.2%.",
+      "verified": "full"
+    },
+    {
+      "metric": "Profit after tax",
+      "entity": "Consolidated",
+      "period": "Q2 FY27",
+      "value": "INR398 million",
+      "context": "Quarterly PAT",
+      "quote": "Profit after tax was INR398 million.",
+      "verified": "full"
+    },
+    {
+      "metric": "Revenue",
+      "entity": "Consolidated",
+      "period": "Last year",
+      "value": "INR3,620 crores",
+      "context": "originally stated",
+      "quote": "originally stated INR3,620 crores revenue of last year",
+      "verified": "full"
+    },
+    {
+      "metric": "Revenue",
+      "entity": "Consolidated",
+      "period": "Current year",
+      "value": "INR3,680 crores",
+      "context": "after restatement",
+      "quote": "our total revenue has gone to INR3,680 crores",
+      "verified": "full"
+    },
+    {
+      "metric": "EBITDA percentage",
+      "entity": "Consolidated",
+      "period": "Current year",
+      "value": "14.2%",
+      "context": "after restatement",
+      "quote": "to 14.2%",
+      "verified": "full"
+    },
+    {
+      "metric": "PAT change",
+      "entity": "Consolidated",
+      "period": "Current year",
+      "value": "+0.9%",
+      "context": "percentage increase",
+      "quote": "PAT level, it has gone up by 0.9%",
+      "verified": "full"
+    }
+  ],
+  "notable_qa": [
+    {
+      "question": "What is the status of Kaynes Semicon Unit 2 and Kaynes Circuits?",
+      "answer": "Both are now operational with multiple products receiving customer approvals.",
+      "asked_by": "not stated"
+    },
+    {
+      "question": "How does the Toyokawa JV fit into Kaynes strategy?",
+      "answer": "It gives entry into thin‑film transistor display modules, complementing existing PCB assemblies for automotive displays.",
+      "asked_by": "not stated"
+    },
+    {
+      "question": "What is the upside for the metering business?",
+      "answer": "The change in auditor has come and then reconfirmed that the way what we have accounted is right, and it has given an upside for us in terms of the metering business to the level of INR40 crores-INR50 crores.",
+      "asked_by": "Achal Lohade with Nuvama Institutional Equities"
+    },
+    {
+      "question": "Will the Vishay investment be used towards ISM 1.0 commitments or ISM 2.0?",
+      "answer": "The investment will go back into the parent company and will ease the cash situation at the parent company. For ISM 2.0, we will invest further at the partnership level when appropriate.",
+      "asked_by": "Mayank Pandey, Emkay Global Financial Services Limited"
+    }
+  ],
+  "risks": [],
+  "tone": {
+    "label": "cautious",
+    "reason": "Management highlights operational progress and strategic acquisitions while acknowledging a difficult global environment and currency depreciation."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "company": "Belrise Industries Limited",
+  "scrip_code": null,
+  "nse_symbol": "BELRISE",
+  "quarter": "Q2 FY27",
+  "call_date": "2026-11-20",
+  "filing_date": "2026-11-20",
+  "source": "NSE",
+  "source_url": "https://nsearchives.nseindia.in/corporate/BELRISE_20112026112442_BELRISE_Intimation_of_Transcript_of_earnings_call_20112026.pdf",
+  "chunks_processed": 12,
+  "tldr": [
+    "Belrise Industries reported its strongest quarter ever in Q2 FY27 with PAT of INR1,663 million and revenue of INR27,464 million, up 17% YoY.",
+    "New Dharwad and Chhatrapati Sambhajinagar facilities will ramp up in Q1 FY28, expected to generate INR1,500–2,000 million and INR1,000–1,200 million annual revenue respectively.",
+    "Suspension business gained traction in Q2 FY27 with six OEM customers onboarded and ROCE improved to 15.3%.",
+    "Aerospace and defense target to contribute upwards of 10% of revenues in the medium‑term, with manufacturing revenue from the segment expected to exceed 10% in the next 12–18 months.",
+    "Merger with Badve auto component business expected to complete in Q4 FY27 or Q1 FY28.",
+    "Trading business margins under pressure but cost pressures easing.",
+    "No revision to mid‑teens revenue growth guidance.",
+    "Aerospace, renewables, and electronics seen as future growth drivers.",
+    "Aerospace revenue contribution estimated at 2.5–3.5% of manufacturing revenue."
+  ],
+  "management_commentary": [
+    "Trading business margins are seeing a bit of pressure.",
+    "Cost pressures seem to be largely behind us, expecting return to normalcy over next few quarters.",
+    "No revision in guidance; maintain mid‑teens revenue growth with stable EBITDA margins.",
+    "Aerospace, renewables, and electronics will be growth drivers over and above automotive."
+  ],
+  "guidance": [
+    "Consolidated Q4 FY27: mid‑teens revenue growth guidance, stable EBITDA margins."
+  ],
+  "segment_performance": [
+    {
+      "segment": "Trading",
+      "notes": "Margins under pressure; cost pressures easing."
+    },
+    {
+      "segment": "Manufacturing",
+      "notes": "EBITDA margins improved quarter‑on‑quarter."
+    }
+  ],
+  "key_metrics": [
+    {
+      "metric": "Merger timeline",
+      "entity": "Consolidated",
+      "period": "Q4 FY27 / Q1 FY28",
+      "value": "6–8 months",
+      "context": "Merger with Badve auto component business",
+      "quote": "timeline of anywhere between six to eight months for this merger to be consummated",
+      "verified": "number_only"
+    },
+    {
+      "metric": "Revenue growth guidance",
+      "entity": "Consolidated",
+      "period": "Q4 FY27",
+      "value": "mid‑teens",
+      "context": "Revenue growth guidance",
+      "quote": "maintain our guidance of mid‑teens revenue growth",
+      "verified": "no"
+    },
+    {
+      "metric": "Aerospace revenue contribution",
+      "entity": "Manufacturing",
+      "period": "Q4 FY27",
+      "value": "2.5–3.5%",
+      "context": "Aerospace contribution to manufacturing revenue",
+      "quote": "anywhere between, say, 2.5%-3.5% of our manufacturing revenue",
+      "verified": "full"
+    },
+    {
+      "metric": "Trading margins",
+      "entity": "Trading",
+      "period": "Q4 FY27",
+      "value": "under pressure",
+      "context": "Trading business margins",
+      "quote": "Trading business margins are seeing a bit of pressure",
+      "verified": "no"
+    },
+    {
+      "metric": "PAT",
+      "entity": "Belrise Industries",
+      "period": "Q2 FY27",
+      "value": "INR1,663 million",
+      "context": "Profit after tax",
+      "quote": "PAT of INR1,663 million",
+      "verified": "number_only"
+    },
+    {
+      "metric": "Revenue",
+      "entity": "Belrise Industries",
+      "period": "Q2 FY27",
+      "value": "INR27,464 million",
+      "context": "Total revenue",
+      "quote": "revenue of INR27,464 million",
+      "verified": "number_only"
+    },
+    {
+      "metric": "ROCE",
+      "entity": "Suspension business",
+      "period": "Q2 FY27",
+      "value": "15.3%",
+      "context": "Return on capital employed",
+      "quote": "ROCE improved to 15.3%",
+      "verified": "number_only"
+    }
+  ],
+  "notable_qa": [
+    {
+      "question": "What is the timeline on the merger with Badve auto component business?",
+      "answer": "We expect it to happen maybe at the end of Q4 FY27 or at Q1 FY28.",
+      "asked_by": "Ayush Jhunjhunwala"
+    },
+    {
+      "question": "Any light on trading business margins?",
+      "answer": "Trading business margins are seeing a bit of pressure, but cost pressures seem to be largely behind us.",
+      "asked_by": "Ayush Jhunjhunwala"
+    }
+  ],
+  "risks": [],
+  "tone": {
+    "label": "cautious",
+    "reason": "Management maintains guidance, acknowledges margin pressure but expects improvement, and highlights future growth areas."
+  }
+}

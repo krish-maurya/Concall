@@ -1,0 +1,175 @@
+{
+  "company": "Zaggle Prepaid Ocean Services Limited",
+  "scrip_code": null,
+  "nse_symbol": "ZAGGLE",
+  "quarter": "Q2 FY27",
+  "call_date": "2026-11-13",
+  "filing_date": "2026-11-20",
+  "source": "NSE",
+  "source_url": "https://nsearchives.nseindia.in/corporate/ZAGGLE_20112026180931_SE_Intimation_-_Earning_Call_transcript.pdf",
+  "chunks_processed": 9,
+  "tldr": [
+    "Zaggle Prepaid Ocean Services reported Q2 FY27 revenue growth of 34% and first‑time H1 FY27 revenue exceeding INR1,000 crores.",
+    "Adjusted EBITDA margin on a consolidated basis was about 7.7% in Q2 FY27 and is expected to remain around 7%-8% going forward.",
+    "Positive operating cash flow was achieved at both standalone and consolidated levels in Q2 FY27.",
+    "Dice acquisition contributed SaaS revenue in Q2 FY27, with 65%-70% of contracts novated.",
+    "Mobileware EBITDA last quarter was due to one‑time events; GreenEdge revenue grew but margins may not grow sequentially.",
+    "Program fee growth slowed to around 10% due to partner bank invoicing; cash back kept at about 66%; revenue growth Q‑on‑Q 22%, Y‑on‑Y 12.5%.",
+    "Zagg Money had about 3 million transactions month‑on‑month; processed INR 3 lakh crore worth of transactions in H1.",
+    "Uncertain incremental revenue from MDR implementation."
+  ],
+  "management_commentary": [
+    "Revenue growth driven by loyalty and reward segment and festive season.",
+    "Payroll costs increased due to Dice acquisition but offset by novated contract revenue.",
+    "Operating cash flow improved through better invoicing, payment terms, and customer advances.",
+    "Implemented AI‑driven accounts payable stack to automate vendor onboarding, reducing onboarding time from four days to 15 minutes.",
+    "Mobileware EBITDA last quarter was due to one‑time events.",
+    "GreenEdge revenue grew but margins may not grow sequentially.",
+    "Investments made to ensure security for Mobileware UPI switch and GreenEdge NPCI redemptions.",
+    "Program fee growth slowed to around 10% due to partner bank invoicing.",
+    "Cash back kept at about 66% and revenue growth Q‑on‑Q 22%, Y‑on‑Y 12.5%.",
+    "Expect momentum between this quarter and next quarter.",
+    "Zagg Money had about 3 million transactions month‑on‑month.",
+    "Processed INR 3 lakh crore worth of transactions in H1.",
+    "Uncertain incremental revenue from MDR implementation."
+  ],
+  "guidance": [],
+  "segment_performance": [
+    {
+      "segment": "Loyalty and Reward",
+      "notes": "Fueled strong growth in overall revenue."
+    },
+    {
+      "segment": "Dice SaaS",
+      "notes": "Revenue contributed in Q2 FY27; contracts largely novated."
+    },
+    {
+      "segment": "86400",
+      "notes": "Revenues grew to around INR22.4 crores in Q2 FY27; EBITDA about INR6 crores; PAT about INR3 crores."
+    }
+  ],
+  "key_metrics": [
+    {
+      "metric": "Revenue growth",
+      "entity": "Consolidated",
+      "period": "Q2 FY27",
+      "value": "34%",
+      "context": "Total revenue growth",
+      "quote": "our total revenue growth of 34% reflects strong operational momentum",
+      "verified": "full"
+    },
+    {
+      "metric": "Adjusted EBITDA margin",
+      "entity": "Consolidated",
+      "period": "Q2 FY27",
+      "value": "7.7%",
+      "context": "Adjusted EBITDA margin",
+      "quote": "our adjusted EBITDA margin on a consolidated basis stood at about 7.7%",
+      "verified": "full"
+    },
+    {
+      "metric": "Operating cash flow",
+      "entity": "Consolidated",
+      "period": "Q2 FY27",
+      "value": "positive",
+      "context": "Operating cash flow status",
+      "quote": "we have achieved a positive operating cash flow, not only at a standalone basis, but also at a consolidated basis",
+      "verified": "no"
+    },
+    {
+      "metric": "Dice contract novation",
+      "entity": "Dice",
+      "period": "Q2 FY27",
+      "value": "65%-70%",
+      "context": "Percentage of contracts novated",
+      "quote": "Currently, about 65% to 70% of the contracts are novated",
+      "verified": "full"
+    },
+    {
+      "metric": "Program fee growth",
+      "entity": "Consolidated",
+      "period": "current quarter",
+      "value": "10%",
+      "context": "growth slowed to around 10%",
+      "quote": "growth has slowed down to around 10%",
+      "verified": "full"
+    },
+    {
+      "metric": "Cash back",
+      "entity": "Consolidated",
+      "period": "current quarter",
+      "value": "66%",
+      "context": "kept at about 66%",
+      "quote": "We have kept it at about 66%",
+      "verified": "full"
+    },
+    {
+      "metric": "Quarter‑on‑quarter revenue growth",
+      "entity": "Consolidated",
+      "period": "current quarter",
+      "value": "22%",
+      "context": "quarter‑on‑quarter grew 22%",
+      "quote": "Quarter‑on‑quarter, we have grown 22%",
+      "verified": "full"
+    },
+    {
+      "metric": "Year‑on‑year revenue growth",
+      "entity": "Consolidated",
+      "period": "current quarter",
+      "value": "12.5%",
+      "context": "year‑on‑year about 12.5%",
+      "quote": "Year‑on‑year, you are right, we are at about 12.5%",
+      "verified": "full"
+    },
+    {
+      "metric": "Zagg Money transactions",
+      "entity": "Consolidated",
+      "period": "month‑on‑month",
+      "value": "3 million",
+      "context": "about 3 million transactions month‑on‑month",
+      "quote": "Zagg Money was about 3 million transactions month on month",
+      "verified": "full"
+    },
+    {
+      "metric": "H1 transaction volume",
+      "entity": "Consolidated",
+      "period": "H1",
+      "value": "INR 3 lakh crore",
+      "context": "processed INR 3 lakh crore worth of transactions in H1",
+      "quote": "processed in H1 INR3 lakh crores worth of transactions",
+      "verified": "full"
+    }
+  ],
+  "notable_qa": [
+    {
+      "question": "How much of our Q2 revenue is from Dice, and what would be the cost base for them as well?",
+      "answer": "Dice revenue is entirely in the SaaS income, and about 65%-70% of those contracts have novated.",
+      "asked_by": "Siva from iThought PMS"
+    },
+    {
+      "question": "Will UPI on MDR have a positive impact on our business and the fintech industry?",
+      "answer": "Yes, it will generate revenue from the huge volume of transactions.",
+      "asked_by": "not stated"
+    },
+    {
+      "question": "On the program fee, the growth has slowed down to around 10%, right? When can we expect this growth to go back to 20%-30% rate?",
+      "answer": "We see momentum kicking in this quarter and hopefully between this quarter and next quarter.",
+      "asked_by": "Siva from iThought PMS"
+    },
+    {
+      "question": "How much of the GTV is currently from UPI, and how much would be eligible for MDR?",
+      "answer": "Right now, the GTV does not include the UPI transactions.",
+      "asked_by": "Siva from iThought PMS"
+    },
+    {
+      "question": "What is the incremental revenue if MDR is implemented?",
+      "answer": "Difficult to quantify at this moment because we also don't exactly know the quantum of MDR that the government will bring in.",
+      "asked_by": "Siva from iThought PMS"
+    }
+  ],
+  "risks": [],
+  "tone": {
+    "label": "positive",
+    "reason": "Management highlights growth, margin improvement, cash flow turnaround, and operational efficiencies."
+  }
+}
