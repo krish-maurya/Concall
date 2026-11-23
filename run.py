@@ -80,9 +80,7 @@ def main() -> int:
     api_key = read_env_value(ENV_FILE, "LLM_API_KEY")
     placeholder_values = {"", "your_api_key", "your-api-key", "change-me", "replace-me"}
     if not api_key or api_key.lower() in placeholder_values or "here" in api_key.lower():
-        print("Cannot start: concall-pipeline/.env has no real LLM_API_KEY.")
-        print("Create it from .env.example and set LLM_API_KEY to a valid key.")
-        return 1
+        print("LLM_API_KEY is not configured. Starting in sample-preview mode.")
 
     if sys.platform == "win32":
         python = VENV / "Scripts" / "python.exe"

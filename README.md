@@ -48,7 +48,7 @@ cp concall-pipeline/.env.example concall-pipeline/.env
 python run.py
 ```
 
-`run.py` installs missing Python/npm packages on first run, starts the backend (http://localhost:8000) and the UI (http://localhost:5173), opens your browser, and stops both on **Ctrl+C**. It refuses to start without an API key: the project never fabricates summaries.
+`run.py` installs missing Python/npm packages on first run, starts the backend (http://localhost:8000) and the UI (http://localhost:5173), opens your browser, and stops both on **Ctrl+C**. A fresh clone can open the UI in sample-preview mode without an API key. Add `LLM_API_KEY` to enable live summarization; the project never fabricates summaries.
 
 | Command | What it does |
 |---|---|

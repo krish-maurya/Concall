@@ -72,6 +72,7 @@ def test_events_emitted():
 def test_no_mock_without_key(monkeypatch):
     import config
     monkeypatch.setattr(config, "LLM_API_KEY", "")
+    S.STOP.clear()
     with pytest.raises(RuntimeError, match="LLM_API_KEY"): REAL_LLM("s", "u")
 def test_watch_modes(monkeypatch):
     import config
@@ -83,3 +84,25 @@ def test_watch_modes(monkeypatch):
     monkeypatch.setattr(config, "WATCHLIST", []); monkeypatch.setattr(config, "SYMBOLS", ["TATAMOTORS"]); assert wanted(it)
 def test_daily_count():
     db.init(); assert db.count_today() >= 0
+
+def test_seed_from_samples(tmp_path, monkeypatch):
+    samples = tmp_path / "samples"
+    sample = samples / "Example_Q2FY27"
+    sample.mkdir(parents=True)
+    (sample / "summary.json").write_text(
+        json.dumps({
+            "company": "Example Ltd",
+            "quarter": "Q2 FY27",
+            "call_date": "2026-11-20",
+            "source": "NSE",
+            "source_url": "https://example.test/transcript",
+            "tldr": ["Test summary"],
+        }),
+        encoding="utf-8",
+    )
+    (sample / "summary.md").write_text("# Example Ltd\n\nTest summary", encoding="utf-8")
+    monkeypatch.setattr(db.config, "DB_PATH", str(tmp_path / "seed.db"))
+    db.init()
+    assert db.seed_from_samples(samples) == 1
+    assert db.list_all()[0]["company"] == "Example Ltd"
+    assert db.seed_from_samples(samples) == 0

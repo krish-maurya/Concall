@@ -22,19 +22,21 @@ events = collections.deque(maxlen=500); _seq = itertools.count(1)
 @asynccontextmanager
 async def lifespan(app):
     db.init(); S.STOP.clear()
+    db.seed_from_samples(pathlib.Path(__file__).resolve().parent.parent / "samples")
     if not getattr(app.state, "no_watcher", False):
         if not config.LLM_API_KEY:
-            raise RuntimeError("LLM_API_KEY is not set. Put a real key in .env - the pipeline never fabricates summaries.")
-        slog = logging.getLogger("server")
-        slog.info("WATCH_MODE=%s watchlist=%s symbols=%s daily_cap=%s", config.WATCH_MODE, config.WATCHLIST or "-", config.SYMBOLS or "-", config.MAX_SUMMARIES_PER_DAY or "unlimited")
-        if config.WATCH_MODE == "all": slog.warning("WATCH_MODE=all: every concall transcript will be summarised (LLM cost grows with filings; cap=%s/day)", config.MAX_SUMMARIES_PER_DAY or "none")
+            logging.getLogger("server").info("LLM_API_KEY is not configured; starting with sample data and watcher disabled.")
+        else:
+            slog = logging.getLogger("server")
+            slog.info("WATCH_MODE=%s watchlist=%s symbols=%s daily_cap=%s", config.WATCH_MODE, config.WATCHLIST or "-", config.SYMBOLS or "-", config.MAX_SUMMARIES_PER_DAY or "unlimited")
+            if config.WATCH_MODE == "all": slog.warning("WATCH_MODE=all: every concall transcript will be summarised (LLM cost grows with filings; cap=%s/day)", config.MAX_SUMMARIES_PER_DAY or "none")
     loop = asyncio.get_running_loop()
     def on_event(ev):  # called from worker threads
         ev["seq"] = next(_seq); events.append(ev)
         loop.call_soon_threadsafe(lambda: asyncio.ensure_future(live.broadcast(ev)))
     S.listeners.append(on_event)
     task = None
-    if not getattr(app.state, "no_watcher", False):
+    if not getattr(app.state, "no_watcher", False) and config.LLM_API_KEY:
         task = asyncio.create_task(watcher.run(await pipeline.make_process(hub.broadcast)))
     yield
     S.STOP.set()  # tell worker threads to stop so the process can exit
