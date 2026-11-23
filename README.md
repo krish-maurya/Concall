@@ -37,8 +37,11 @@ It runs unattended: no manual trigger is needed once started.
 **Requirements:** Python 3.10+ and Node 18+ (Node is optional if you only use `--api-only`).
 
 ```bash
+git clone https://github.com/krish-maurya/Concall.git
+cd Concall
 # 1. one-time: add your LLM key
-cp concall-pipeline/.env.example concall-pipeline/.env      # Windows: copy ...
+cp concall-pipeline/.env.example concall-pipeline/.env
+# Windows: copy concall-pipeline\.env.example concall-pipeline\.env
 #    then edit concall-pipeline/.env and set LLM_API_KEY=<your key>
 
 # 2. start everything (backend + UI) from this folder
